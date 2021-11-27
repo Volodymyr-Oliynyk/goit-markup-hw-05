@@ -112,12 +112,13 @@ body {
 
 .nav-link {
   display: block;
+
+  padding: 32px 0;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
-  padding: 32px 0;
 
   color: var(--primary-color);
 }
@@ -139,6 +140,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -171,26 +173,29 @@ body {
 }
 
 .hero-title {
+  text-align: center;
+  margin: 0 auto 30px auto;
+
+  max-width: 696px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  max-width: 696px;
-  text-align: center;
-  margin: 0 auto 30px auto;
 
   color: var(--secondary-color);
 }
 
 .primary-button {
+  padding: 10px 32px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--secondary-color);
-  padding: 10px 32px;
 
   background-color: var(--accent-color);
 }
@@ -201,39 +206,39 @@ body {
   display: flex;
   margin: 0 auto;
 }
-/* .skills-item {
-  background: var(--secondary-background-color);
-  border-radius: 4px;
-} */
 
 .skills-item:not(:last-child) {
   margin-right: 30px;
 }
 
 .skill-background {
-  border-radius: 4px;
   padding: 25px 100px;
+
+  border-radius: 4px;
 
   background: var(--secondary-background-color);
 }
+
 .skills-icon {
   display: block;
 }
+
 .skill-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  margin-top: 30px;
-  margin-bottom: 10px;
-
   color: var(--primary-color);
 }
 
 .skill-text {
   max-width: 270px;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -248,12 +253,13 @@ body {
 }
 
 .section-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
 
   color: var(--primary-color);
 }
@@ -286,29 +292,31 @@ body {
 }
 
 .teammate-background {
+  text-align: center;
   padding: 30px 0;
 
-  text-align: center;
-
   border-radius: 0px 0px 4px 4px;
+
   background-color: var(--secondary-color);
 }
 
 .teammate-name {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-
   letter-spacing: 0.03em;
-  margin-bottom: 10px;
+
   color: var(--primary-color);
 }
 
 .teammate-position {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.03em;
-  margin-bottom: 16px;
 
   color: var(--primary-shade-color);
 }
@@ -323,16 +331,16 @@ body {
 }
 
 .temmate-social-link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-
   display: flex;
   justify-content: center;
   align-items: center;
 
-  background-color: var(--secondary-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
   color: var(--icon-color);
+  background-color: var(--secondary-color);
 }
 
 .temmate-social-link:hover,
@@ -340,6 +348,7 @@ body {
   color: var(--secondary-color);
   background-color: var(--accent-color);
 }
+
 .temmate-social-icon {
   fill: currentColor;
 }
@@ -361,16 +370,18 @@ body {
 .client-link {
   display: flex;
   padding: 16px 35px;
+
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   color: var(--icon-color);
 }
+
 .client-link:hover,
 .client-link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
 .client-icon {
   fill: currentColor;
 }
@@ -388,13 +399,14 @@ body {
 }
 
 .secondary-button {
+  padding: 6px 22px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
-  padding: 6px 22px;
 
   color: var(--primary-color);
 }
@@ -402,10 +414,10 @@ body {
 .filter-item :hover,
 .filter-item :focus,
 .filter-item :active {
-  background-color: var(--accent-color);
   color: var(--secondary-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  background-color: var(--accent-color);
 }
 
 .project-list {
@@ -431,18 +443,19 @@ body {
 .project-backgraung {
   padding: 20px 24px;
 
-  background-color: var(--secondary-color);
   border: 1px solid var(--secondary-border-color);
   border-top: none;
+
+  background-color: var(--secondary-color);
 }
 
 .project-title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-
-  margin-bottom: 4px;
 
   color: var(--primary-color);
 }
@@ -459,9 +472,10 @@ body {
 .social-conection {
   display: flex;
   align-items: center;
+  text-align: left;
+
   padding: 60px 15px;
   margin: 0 auto;
-  text-align: left;
 }
 
 .logo-white {
@@ -517,6 +531,9 @@ body {
 }
 
 .text-social-container {
+  margin-bottom: 20px;
+  margin-right: auto;
+
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -524,8 +541,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  margin-bottom: 20px;
-  margin-right: auto;
   color: var(--secondary-color);
 }
 
@@ -543,13 +558,13 @@ body {
 }
 
 .footer-social-link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-
   display: flex;
   justify-content: center;
   align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--secondary-color);
@@ -562,4 +577,40 @@ body {
 
 .footer-social-icon {
   fill: currentColor;
+}
+
+/* ------------------ MODAL-------------------- */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 528px;
+  height: 581px;
+
+  background-color: var(--secondary-color);
+}
+
+.modal-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px, solid: rgba(0, 0, 0, 0,1);
+background-color: var(--secondary-color);
 }
