@@ -131,7 +131,7 @@ body {
   background-color: var(--accent-color);
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
 }
 
 .nav-link:hover,
@@ -162,7 +162,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  color: var(--icon-color);
+  color: var(--primary-shade-color);
 }
 
 .contact-link:hover,
@@ -285,10 +285,6 @@ body {
   display: flex;
 }
 
-/* .service-item {
- 
-} */
-
 .service-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -296,15 +292,17 @@ body {
   position: relative;
 }
 
-.service-title {
+.service-title-position {
   position: absolute;
   left: 0;
   bottom: 0;
-
   width: 100%;
   padding-top: 27px;
   padding-bottom: 27px;
+  background-color: var(--background-color-servis-block);
+}
 
+.service-title {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -314,7 +312,6 @@ body {
   text-transform: uppercase;
 
   color: var(--secondary-color);
-  background-color: var(--background-color-servis-block);
 }
 
 /*--------------- TEAM -----------*/
@@ -493,7 +490,7 @@ body {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-item:hover .project-text-wrap {
-  transform: translate(0);
+  transform: translateY(0);
 }
 
 .project-image-wrap {
@@ -502,7 +499,6 @@ body {
 }
 
 .project-text-wrap {
-  font-weight: normal;
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
@@ -511,11 +507,11 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  padding: 24px;
+  padding: 64px 24px;
   top: 0;
   left: 0;
   transform: translateY(100%);
-  transition: transform 295ms;
+  transition: transform 250ms;
   overflow: auto;
   background-color: var(--backgraund-color-wrap);
 }
@@ -564,12 +560,6 @@ body {
 
 .address {
   margin-top: 20px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address :hover,
-.address :focus {
-  color: var(--accent-color);
 }
 
 .address-link {
@@ -577,7 +567,15 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
   color: var(--secondary-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-color);
 }
 
 .address-item {
@@ -599,6 +597,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--primary-shade-color);
 }
 
@@ -646,7 +645,7 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--secondary-color);
 }
@@ -670,6 +669,7 @@ body {
   width: 100%;
   height: 100%;
 
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -678,23 +678,28 @@ body {
   pointer-events: none;
 }
 
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.8);
+}
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 15px;
   width: 528px;
   min-height: 581px;
+  border-radius: 4px;
 
   background-color: var(--secondary-color);
 }
 
 .modal-button {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
